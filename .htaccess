@@ -1,0 +1,10 @@
+RewriteEngine on
+Options +FollowSymLinks
+
+#RewriteCond %{HTTP_HOST} ^devbattles\.com$ [NC]
+#RewriteRule ^(.*)$ http://www.devbattles.com/$1 [R=301,L]
+
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteCond %{REQUEST_FILENAME} !-f
+
+AddDefaultCharset utf-8
